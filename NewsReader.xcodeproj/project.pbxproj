@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7A30F0404620EB900000000 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E294139CC2A00000000 /* CoreMotion.framework */; };
+		E7A30F0417401D2200000000 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E293619C3AA00000000 /* StoreKit.framework */; };
+		E7A30F042F000C2B00000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29D5B0290400000000 /* UIKit.framework */; };
+		E7A30F044865253E00000000 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E298101DC0400000000 /* Security.framework */; };
+		E7A30F044AD3F4B100000000 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2964EF0D2E00000000 /* MediaPlayer.framework */; };
+		E7A30F044D91570A00000000 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E298C971E7300000000 /* libsqlite3.tbd */; };
+		E7A30F045A716CDA00000000 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E295776DEDC00000000 /* CoreLocation.framework */; };
+		E7A30F045EC4B01600000000 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29256A327E00000000 /* AddressBook.framework */; };
+		E7A30F0464AD5B3900000000 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2989D5996800000000 /* SafariServices.framework */; };
+		E7A30F0483758ADC00000000 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2946D7ED7D00000000 /* libz.tbd */; };
+		E7A30F0486E77AD900000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E298B55908E00000000 /* Foundation.framework */; };
+		E7A30F04992F099000000000 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E296C98E98A00000000 /* SystemConfiguration.framework */; };
+		E7A30F04AF660F7D00000000 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29426E09F800000000 /* AssetsLibrary.framework */; };
+		E7A30F04B2C5875200000000 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29C540E08200000000 /* CFNetwork.framework */; };
+		EE5293141CECEF4600153DD7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5293071CECEEED00153DD7 /* Alamofire.framework */; };
+		EE5293151CECEF4600153DD7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE5293071CECEEED00153DD7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE5293191CECF22A00153DD7 /* NYTimesArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5293181CECF22A00153DD7 /* NYTimesArticle.swift */; };
+		EE643E5A1CE3BD1A005BE106 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E2F1CE3BD1A005BE106 /* AWSMobileClient.swift */; };
+		EE643E5C1CE3BD1A005BE106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E321CE3BD1A005BE106 /* AppDelegate.swift */; };
+		EE643E5D1CE3BD1A005BE106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE643E331CE3BD1A005BE106 /* Images.xcassets */; };
+		EE643E5E1CE3BD1A005BE106 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E341CE3BD1A005BE106 /* Launch Screen.storyboard */; };
+		EE643E5F1CE3BD1A005BE106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E351CE3BD1A005BE106 /* Main.storyboard */; };
+		EE643E601CE3BD1A005BE106 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E361CE3BD1A005BE106 /* MainViewController.swift */; };
+		EE643E611CE3BD1A005BE106 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E381CE3BD1A005BE106 /* SignIn.storyboard */; };
+		EE643E621CE3BD1A005BE106 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE643E3A1CE3BD1A005BE106 /* Info.plist */; };
+		EE643E631CE3BD1A005BE106 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E3C1CE3BD1A005BE106 /* UtilityFunctions.swift */; };
+		EE643E641CE3BD1A005BE106 /* CloudLogic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E3F1CE3BD1A005BE106 /* CloudLogic.storyboard */; };
+		EE643E651CE3BD1A005BE106 /* CloudLogicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E401CE3BD1A005BE106 /* CloudLogicViewController.swift */; };
+		EE643E661CE3BD1A005BE106 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E411CE3BD1A005BE106 /* DemoFeature.swift */; };
+		EE643E671CE3BD1A005BE106 /* NewYorkTimesArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E431CE3BD1A005BE106 /* NewYorkTimesArticle.swift */; };
+		EE643E681CE3BD1A005BE106 /* NewYorkTimesArticleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E441CE3BD1A005BE106 /* NewYorkTimesArticleSet.swift */; };
+		EE643E691CE3BD1A005BE106 /* NewYorkTimesArticleSetTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E451CE3BD1A005BE106 /* NewYorkTimesArticleSetTable.swift */; };
+		EE643E6A1CE3BD1A005BE106 /* NewYorkTimesArticleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E461CE3BD1A005BE106 /* NewYorkTimesArticleTable.swift */; };
+		EE643E6B1CE3BD1A005BE106 /* NoSQLDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E471CE3BD1A005BE106 /* NoSQLDatabase.storyboard */; };
+		EE643E6C1CE3BD1A005BE106 /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E481CE3BD1A005BE106 /* NoSQLModelHelpers.swift */; };
+		EE643E6D1CE3BD1A005BE106 /* NoSQLQueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E491CE3BD1A005BE106 /* NoSQLQueryResultViewController.swift */; };
+		EE643E6E1CE3BD1A005BE106 /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E4A1CE3BD1A005BE106 /* NoSQLSampleDataGenerator.swift */; };
+		EE643E6F1CE3BD1A005BE106 /* NoSQLTableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E4B1CE3BD1A005BE106 /* NoSQLTableFactory.swift */; };
+		EE643E701CE3BD1A005BE106 /* NoSQLTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E4C1CE3BD1A005BE106 /* NoSQLTableListViewController.swift */; };
+		EE643E711CE3BD1A005BE106 /* NoSQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E4D1CE3BD1A005BE106 /* NoSQLTableViewController.swift */; };
+		EE643E721CE3BD1A005BE106 /* UserIdentity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE643E4F1CE3BD1A005BE106 /* UserIdentity.storyboard */; };
+		EE643E731CE3BD1A005BE106 /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643E501CE3BD1A005BE106 /* UserIdentityViewController.swift */; };
+		EE643E7D1CE3BD43005BE106 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7A1CE3BD43005BE106 /* AWSCore.framework */; };
+		EE643E7E1CE3BD43005BE106 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7B1CE3BD43005BE106 /* AWSDynamoDB.framework */; };
+		EE643E7F1CE3BD43005BE106 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7C1CE3BD43005BE106 /* AWSLambda.framework */; };
+		EE643E811CE3BD66005BE106 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E801CE3BD66005BE106 /* AWSMobileHubHelper.framework */; };
+		EEF150501CE3C6A70059A1C1 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7A1CE3BD43005BE106 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEF150511CE3C6A70059A1C1 /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7B1CE3BD43005BE106 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEF150521CE3C6A70059A1C1 /* AWSLambda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE643E7C1CE3BD43005BE106 /* AWSLambda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE5293061CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		EE5293081CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		EE52930A1CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		EE52930C1CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		EE52930E1CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		EE5293101CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		EE5293121CECEEED00153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		EE5293161CECEF4600153DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAF5FAC90000000000000000 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEF150501CE3C6A70059A1C1 /* AWSCore.framework in Embed Frameworks */,
+				EEF150511CE3C6A70059A1C1 /* AWSDynamoDB.framework in Embed Frameworks */,
+				EEF150521CE3C6A70059A1C1 /* AWSLambda.framework in Embed Frameworks */,
+				EE5293151CECEF4600153DD7 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1DD70E29256A327E00000000 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1DD70E293619C3AA00000000 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1DD70E294139CC2A00000000 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1DD70E29426E09F800000000 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1DD70E2946D7ED7D00000000 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1DD70E295776DEDC00000000 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1DD70E2964EF0D2E00000000 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1DD70E296C98E98A00000000 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1DD70E298101DC0400000000 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1DD70E2989D5996800000000 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		1DD70E298B55908E00000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DD70E298C971E7300000000 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1DD70E29992DAB8F00000000 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E29C540E08200000000 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1DD70E29D5B0290400000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		EE5293181CECF22A00153DD7 /* NYTimesArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYTimesArticle.swift; sourceTree = "<group>"; };
+		EE643E2F1CE3BD1A005BE106 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
+		EE643E321CE3BD1A005BE106 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE643E331CE3BD1A005BE106 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EE643E341CE3BD1A005BE106 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EE643E351CE3BD1A005BE106 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EE643E361CE3BD1A005BE106 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE643E381CE3BD1A005BE106 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		EE643E3A1CE3BD1A005BE106 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE643E3C1CE3BD1A005BE106 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		EE643E3F1CE3BD1A005BE106 /* CloudLogic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CloudLogic.storyboard; sourceTree = "<group>"; };
+		EE643E401CE3BD1A005BE106 /* CloudLogicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudLogicViewController.swift; sourceTree = "<group>"; };
+		EE643E411CE3BD1A005BE106 /* DemoFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
+		EE643E431CE3BD1A005BE106 /* NewYorkTimesArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkTimesArticle.swift; sourceTree = "<group>"; };
+		EE643E441CE3BD1A005BE106 /* NewYorkTimesArticleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkTimesArticleSet.swift; sourceTree = "<group>"; };
+		EE643E451CE3BD1A005BE106 /* NewYorkTimesArticleSetTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkTimesArticleSetTable.swift; sourceTree = "<group>"; };
+		EE643E461CE3BD1A005BE106 /* NewYorkTimesArticleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkTimesArticleTable.swift; sourceTree = "<group>"; };
+		EE643E471CE3BD1A005BE106 /* NoSQLDatabase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoSQLDatabase.storyboard; sourceTree = "<group>"; };
+		EE643E481CE3BD1A005BE106 /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLModelHelpers.swift; sourceTree = "<group>"; };
+		EE643E491CE3BD1A005BE106 /* NoSQLQueryResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLQueryResultViewController.swift; sourceTree = "<group>"; };
+		EE643E4A1CE3BD1A005BE106 /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLSampleDataGenerator.swift; sourceTree = "<group>"; };
+		EE643E4B1CE3BD1A005BE106 /* NoSQLTableFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableFactory.swift; sourceTree = "<group>"; };
+		EE643E4C1CE3BD1A005BE106 /* NoSQLTableListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableListViewController.swift; sourceTree = "<group>"; };
+		EE643E4D1CE3BD1A005BE106 /* NoSQLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableViewController.swift; sourceTree = "<group>"; };
+		EE643E4F1CE3BD1A005BE106 /* UserIdentity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserIdentity.storyboard; sourceTree = "<group>"; };
+		EE643E501CE3BD1A005BE106 /* UserIdentityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentityViewController.swift; sourceTree = "<group>"; };
+		EE643E7A1CE3BD43005BE106 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = NewsReader/Sdk/Aws/AWSCore.framework; sourceTree = "<group>"; };
+		EE643E7B1CE3BD43005BE106 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = NewsReader/Sdk/Aws/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		EE643E7C1CE3BD43005BE106 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = NewsReader/Sdk/Aws/AWSLambda.framework; sourceTree = "<group>"; };
+		EE643E801CE3BD66005BE106 /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = NewsReader/AmazonAws/AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F426D880000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE643E7E1CE3BD43005BE106 /* AWSDynamoDB.framework in Frameworks */,
+				EE643E7F1CE3BD43005BE106 /* AWSLambda.framework in Frameworks */,
+				EE643E7D1CE3BD43005BE106 /* AWSCore.framework in Frameworks */,
+				EE643E811CE3BD66005BE106 /* AWSMobileHubHelper.framework in Frameworks */,
+				E7A30F042F000C2B00000000 /* UIKit.framework in Frameworks */,
+				E7A30F04992F099000000000 /* SystemConfiguration.framework in Frameworks */,
+				E7A30F044865253E00000000 /* Security.framework in Frameworks */,
+				E7A30F04B2C5875200000000 /* CFNetwork.framework in Frameworks */,
+				E7A30F0483758ADC00000000 /* libz.tbd in Frameworks */,
+				E7A30F044D91570A00000000 /* libsqlite3.tbd in Frameworks */,
+				E7A30F0486E77AD900000000 /* Foundation.framework in Frameworks */,
+				EE5293141CECEF4600153DD7 /* Alamofire.framework in Frameworks */,
+				E7A30F044AD3F4B100000000 /* MediaPlayer.framework in Frameworks */,
+				E7A30F045EC4B01600000000 /* AddressBook.framework in Frameworks */,
+				E7A30F04AF660F7D00000000 /* AssetsLibrary.framework in Frameworks */,
+				E7A30F045A716CDA00000000 /* CoreLocation.framework in Frameworks */,
+				E7A30F0404620EB900000000 /* CoreMotion.framework in Frameworks */,
+				E7A30F0417401D2200000000 /* StoreKit.framework in Frameworks */,
+				E7A30F0464AD5B3900000000 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B401C9795E29AE6900000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E7A1CE3BD43005BE106 /* AWSCore.framework */,
+				EE643E7B1CE3BD43005BE106 /* AWSDynamoDB.framework */,
+				EE643E7C1CE3BD43005BE106 /* AWSLambda.framework */,
+				EE643E801CE3BD66005BE106 /* AWSMobileHubHelper.framework */,
+				1DD70E29256A327E00000000 /* AddressBook.framework */,
+				1DD70E29426E09F800000000 /* AssetsLibrary.framework */,
+				1DD70E29C540E08200000000 /* CFNetwork.framework */,
+				1DD70E295776DEDC00000000 /* CoreLocation.framework */,
+				1DD70E294139CC2A00000000 /* CoreMotion.framework */,
+				1DD70E298B55908E00000000 /* Foundation.framework */,
+				1DD70E2964EF0D2E00000000 /* MediaPlayer.framework */,
+				1DD70E2989D5996800000000 /* SafariServices.framework */,
+				1DD70E298101DC0400000000 /* Security.framework */,
+				1DD70E293619C3AA00000000 /* StoreKit.framework */,
+				1DD70E296C98E98A00000000 /* SystemConfiguration.framework */,
+				1DD70E29D5B0290400000000 /* UIKit.framework */,
+				1DD70E298C971E7300000000 /* libsqlite3.tbd */,
+				1DD70E2946D7ED7D00000000 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B401C9795E4280FC00000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29992DAB8F00000000 /* NewsReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C9796CFC507600000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */,
+				B401C9795E4280FC00000000 /* Products */,
+				EE643E2D1CE3BD1A005BE106 /* NewsReader */,
+				B401C9795E29AE6900000000 /* Frameworks */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+		EE5292FD1CECEEED00153DD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5293071CECEEED00153DD7 /* Alamofire.framework */,
+				EE5293091CECEEED00153DD7 /* Alamofire iOS Tests.xctest */,
+				EE52930B1CECEEED00153DD7 /* Alamofire.framework */,
+				EE52930D1CECEEED00153DD7 /* Alamofire OSX Tests.xctest */,
+				EE52930F1CECEEED00153DD7 /* Alamofire.framework */,
+				EE5293111CECEEED00153DD7 /* Alamofire tvOS Tests.xctest */,
+				EE5293131CECEEED00153DD7 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE643E2D1CE3BD1A005BE106 /* NewsReader */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E2E1CE3BD1A005BE106 /* AmazonAws */,
+				EE643E311CE3BD1A005BE106 /* App */,
+				EE643E3D1CE3BD1A005BE106 /* Demo */,
+			);
+			path = NewsReader;
+			sourceTree = "<group>";
+		};
+		EE643E2E1CE3BD1A005BE106 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E2F1CE3BD1A005BE106 /* AWSMobileClient.swift */,
+			);
+			path = AmazonAws;
+			sourceTree = "<group>";
+		};
+		EE643E311CE3BD1A005BE106 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E321CE3BD1A005BE106 /* AppDelegate.swift */,
+				EE643E331CE3BD1A005BE106 /* Images.xcassets */,
+				EE643E341CE3BD1A005BE106 /* Launch Screen.storyboard */,
+				EE643E351CE3BD1A005BE106 /* Main.storyboard */,
+				EE643E361CE3BD1A005BE106 /* MainViewController.swift */,
+				EE5293181CECF22A00153DD7 /* NYTimesArticle.swift */,
+				EE643E371CE3BD1A005BE106 /* SignIn */,
+				EE643E391CE3BD1A005BE106 /* SupportingFiles */,
+				EE643E3B1CE3BD1A005BE106 /* Utility */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EE643E371CE3BD1A005BE106 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E381CE3BD1A005BE106 /* SignIn.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		EE643E391CE3BD1A005BE106 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E3A1CE3BD1A005BE106 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EE643E3B1CE3BD1A005BE106 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E3C1CE3BD1A005BE106 /* UtilityFunctions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE643E3D1CE3BD1A005BE106 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E3E1CE3BD1A005BE106 /* CloudLogic */,
+				EE643E411CE3BD1A005BE106 /* DemoFeature.swift */,
+				EE643E421CE3BD1A005BE106 /* NoSQL */,
+				EE643E4E1CE3BD1A005BE106 /* UserIdentity */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		EE643E3E1CE3BD1A005BE106 /* CloudLogic */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E3F1CE3BD1A005BE106 /* CloudLogic.storyboard */,
+				EE643E401CE3BD1A005BE106 /* CloudLogicViewController.swift */,
+			);
+			path = CloudLogic;
+			sourceTree = "<group>";
+		};
+		EE643E421CE3BD1A005BE106 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E431CE3BD1A005BE106 /* NewYorkTimesArticle.swift */,
+				EE643E441CE3BD1A005BE106 /* NewYorkTimesArticleSet.swift */,
+				EE643E451CE3BD1A005BE106 /* NewYorkTimesArticleSetTable.swift */,
+				EE643E461CE3BD1A005BE106 /* NewYorkTimesArticleTable.swift */,
+				EE643E471CE3BD1A005BE106 /* NoSQLDatabase.storyboard */,
+				EE643E481CE3BD1A005BE106 /* NoSQLModelHelpers.swift */,
+				EE643E491CE3BD1A005BE106 /* NoSQLQueryResultViewController.swift */,
+				EE643E4A1CE3BD1A005BE106 /* NoSQLSampleDataGenerator.swift */,
+				EE643E4B1CE3BD1A005BE106 /* NoSQLTableFactory.swift */,
+				EE643E4C1CE3BD1A005BE106 /* NoSQLTableListViewController.swift */,
+				EE643E4D1CE3BD1A005BE106 /* NoSQLTableViewController.swift */,
+			);
+			path = NoSQL;
+			sourceTree = "<group>";
+		};
+		EE643E4E1CE3BD1A005BE106 /* UserIdentity */ = {
+			isa = PBXGroup;
+			children = (
+				EE643E4F1CE3BD1A005BE106 /* UserIdentity.storyboard */,
+				EE643E501CE3BD1A005BE106 /* UserIdentityViewController.swift */,
+			);
+			path = UserIdentity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04E0000000000000000 /* NewsReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXNativeTarget "NewsReader" */;
+			buildPhases = (
+				E1F174220000000000000001 /* ShellScript */,
+				1870857F0000000000000000 /* Sources */,
+				4F426D880000000000000000 /* Frameworks */,
+				8A032D2C0000000000000000 /* Resources */,
+				FAF5FAC90000000000000000 /* Embed Frameworks */,
+				E1F174220000000000000000 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5293171CECEF4600153DD7 /* PBXTargetDependency */,
+			);
+			name = NewsReader;
+			productName = MySampleApp;
+			productReference = 1DD70E29992DAB8F00000000 /* NewsReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C847930000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					E66DC04E0000000000000000 = {
+						DevelopmentTeam = 4WR66L3TZA;
+					};
+				};
+			};
+			buildConfigurationList = 218C37090000000000000000 /* Build configuration list for PBXProject "NewsReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B401C9796CFC507600000000 /* mainGroup */;
+			productRefGroup = B401C9795E4280FC00000000 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EE5292FD1CECEEED00153DD7 /* Products */;
+					ProjectRef = EE5292FC1CECEEED00153DD7 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E66DC04E0000000000000000 /* NewsReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EE5293071CECEEED00153DD7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EE5293061CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE5293091CECEEED00153DD7 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = EE5293081CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE52930B1CECEEED00153DD7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EE52930A1CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE52930D1CECEEED00153DD7 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = EE52930C1CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE52930F1CECEEED00153DD7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EE52930E1CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE5293111CECEEED00153DD7 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = EE5293101CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE5293131CECEEED00153DD7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EE5293121CECEEED00153DD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A032D2C0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE643E611CE3BD1A005BE106 /* SignIn.storyboard in Resources */,
+				EE643E641CE3BD1A005BE106 /* CloudLogic.storyboard in Resources */,
+				EE643E5F1CE3BD1A005BE106 /* Main.storyboard in Resources */,
+				EE643E6B1CE3BD1A005BE106 /* NoSQLDatabase.storyboard in Resources */,
+				EE643E5E1CE3BD1A005BE106 /* Launch Screen.storyboard in Resources */,
+				EE643E621CE3BD1A005BE106 /* Info.plist in Resources */,
+				EE643E5D1CE3BD1A005BE106 /* Images.xcassets in Resources */,
+				EE643E721CE3BD1A005BE106 /* UserIdentity.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1F174220000000000000000 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+		E1F174220000000000000001 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=${SRCROOT}/MySampleApp/Sdk/CheckXcodeVersion.sh\nif [ -e $FILE ]; then\n    $FILE\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE643E681CE3BD1A005BE106 /* NewYorkTimesArticleSet.swift in Sources */,
+				EE643E601CE3BD1A005BE106 /* MainViewController.swift in Sources */,
+				EE643E661CE3BD1A005BE106 /* DemoFeature.swift in Sources */,
+				EE643E6F1CE3BD1A005BE106 /* NoSQLTableFactory.swift in Sources */,
+				EE643E6C1CE3BD1A005BE106 /* NoSQLModelHelpers.swift in Sources */,
+				EE643E6D1CE3BD1A005BE106 /* NoSQLQueryResultViewController.swift in Sources */,
+				EE643E701CE3BD1A005BE106 /* NoSQLTableListViewController.swift in Sources */,
+				EE643E5C1CE3BD1A005BE106 /* AppDelegate.swift in Sources */,
+				EE643E6A1CE3BD1A005BE106 /* NewYorkTimesArticleTable.swift in Sources */,
+				EE643E731CE3BD1A005BE106 /* UserIdentityViewController.swift in Sources */,
+				EE5293191CECF22A00153DD7 /* NYTimesArticle.swift in Sources */,
+				EE643E631CE3BD1A005BE106 /* UtilityFunctions.swift in Sources */,
+				EE643E671CE3BD1A005BE106 /* NewYorkTimesArticle.swift in Sources */,
+				EE643E6E1CE3BD1A005BE106 /* NoSQLSampleDataGenerator.swift in Sources */,
+				EE643E691CE3BD1A005BE106 /* NewYorkTimesArticleSetTable.swift in Sources */,
+				EE643E711CE3BD1A005BE106 /* NoSQLTableViewController.swift in Sources */,
+				EE643E651CE3BD1A005BE106 /* CloudLogicViewController.swift in Sources */,
+				EE643E5A1CE3BD1A005BE106 /* AWSMobileClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE5293171CECEF4600153DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = EE5293161CECEF4600153DD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49524373386D956C00000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49524373386D956C00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NewsReader/Sdk/**",
+					"$(PROJECT_DIR)/NewsReader/AmazonAws",
+					"$(PROJECT_DIR)/NewsReader/Sdk/Aws",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/NewsReader/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = NewsReader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4952437346F3E10800000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4952437346F3E10800000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NewsReader/Sdk/**",
+					"$(PROJECT_DIR)/NewsReader/AmazonAws",
+					"$(PROJECT_DIR)/NewsReader/Sdk/Aws",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/NewsReader/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = NewsReader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000000 /* Build configuration list for PBXProject "NewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000000 /* Debug */,
+				49524373386D956C00000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000001 /* Build configuration list for PBXNativeTarget "NewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000001 /* Debug */,
+				49524373386D956C00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C847930000000000000000 /* Project object */;
+}
